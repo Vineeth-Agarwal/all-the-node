@@ -21,5 +21,5 @@ app.post('/', function (request, response) {
   response.send('POST request to the homepage\n')
 })
 
-app.listen(5000, () => console.log('App listening on http://localhost/5000!'))
+app.listen(process.env.PORT || 5000, () => console.log('App listening on http://localhost/5000!'))
 
