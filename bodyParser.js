@@ -12,7 +12,7 @@ app.get('/', function (request, response) {
     console.log(url.parse(request.url,true).query)
     console.log("name: " + request.query.name)
     console.log("age: " + request.query.age)
-  response.send('GET request to the homepage\n')
+  response.send('This is a deployed version of node application deployed in heroku')
 })
 
 // POST method route
@@ -21,5 +21,5 @@ app.post('/', function (request, response) {
   response.send('POST request to the homepage\n')
 })
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(5000, () => console.log('App listening on http://localhost/5000!'))
 
